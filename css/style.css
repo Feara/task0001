@@ -1,5 +1,5 @@
 /*index----------------------head-----------------------------*/
-@media screen and(max-width:980px){
+@media all and(max-width:980px){
 	#icon{
 		display: none;
 	}
@@ -23,7 +23,7 @@ li{
 }
 a{
 	text-decoration: none;
-	color: #fff;
+	color: #fff;	
 }
 a:link,a:visited{
 	text-decoration: none;
@@ -70,7 +70,9 @@ body{
 	bottom: 0px;
 	right: 10px;
 }
-
+#icon img{
+	display: block;
+}
 /*------------------------条幅照片部分banner---------------------------*/
 .banner img{
 		width:100%;
@@ -154,14 +156,14 @@ body{
 	width:100%;	
 	margin-top: 200px;
 }
-
-.foot table{
+.foot-links-box:after{
 	display: block;
-	width:980px;
-	height:260px;
-	margin: 0 auto;
-	margin-bottom: 20px;
-		}
+	content:" ";
+	height: 0;
+	line-height: 0;
+	overflow: hidden;
+	clear: both;
+}
 .nav-bottom{
 	width:100%;
 	border-bottom: 1px solid #555;
@@ -171,37 +173,31 @@ body{
 	padding: 20px auto;
 	}
 
-.nav-bottom li{
+.nav-bottom ul>li {
 	display: inline-block;
 	font-size: 12px;
 	font-weight: normal;
 	margin-right: 24px;
 	margin-top: 5px;
 }
-.foot table tbody tr ul li{
-	display: list-item;
-	font-size: 14px;
+.foot .foot-links{
+	float: left;
+	width:20%;
+	text-align: center;
 }
-.foot>table>tbody>tr{
-	align:center;
-	vertical-align: top;
-	}
-.foot>table>tbody>tr:first-child>td{
-	vertical-align: middle;
-	color: #999;
+.foot .foot-links >li{
+	font-size: 18px;
+	padding-bottom: 20px;
 }
-.foot>table>tbody>tr:last-child{
-	margin-bottom: 0;
-	align:center;
-}
+	
 
-.foot>table>tbody>tr>td{
-	height:30px;
-	color: #fff;
-	font-size: 12px;
-	}
-
-.foot #copy{
+.foot-links ul >:first-child{
+       font-size:12px;
+       padding-top: 20px;
+       	padding-bottom: 20px;
+       	color:#fff;
+}
+.foot #copyright{
 	font-size: 10px;
 	line-height: 1.5;
 	text-align: center;
@@ -210,7 +206,6 @@ body{
 .foot img{
 	display: block;
 	margin: 20px auto;
-    text-align:center;
     margin-bottom: 0;
 }
 /*------------------------blog----------------------------*/
